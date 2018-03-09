@@ -1,0 +1,6 @@
+framework module Pods_TinDogUITests {
+  umbrella header "Pods-TinDogUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
