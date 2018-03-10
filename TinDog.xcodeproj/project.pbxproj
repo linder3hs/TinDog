@@ -11,12 +11,12 @@
 		76F833F6026304ACB7BD4661 /* Pods_TinDogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ED4AF304EF31A70D5004DCA /* Pods_TinDogTests.framework */; };
 		CF20A6DBC5DD376F32263038 /* Pods_TinDog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1280FC1BC7AB8A662DEF9F87 /* Pods_TinDog.framework */; };
 		DDCB27DC20525E530019DD43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB27DB20525E530019DD43 /* AppDelegate.swift */; };
-		DDCB27DE20525E530019DD43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB27DD20525E530019DD43 /* ViewController.swift */; };
 		DDCB27E120525E530019DD43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCB27DF20525E530019DD43 /* Main.storyboard */; };
 		DDCB27E320525E530019DD43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCB27E220525E530019DD43 /* Assets.xcassets */; };
 		DDCB27E620525E530019DD43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDCB27E420525E530019DD43 /* LaunchScreen.storyboard */; };
 		DDCB27F120525E540019DD43 /* TinDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB27F020525E540019DD43 /* TinDogTests.swift */; };
 		DDCB27FC20525E540019DD43 /* TinDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCB27FB20525E540019DD43 /* TinDogUITests.swift */; };
+		DDF471742053650900046A9F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDF471732053650900046A9F /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		DB474CFCE85A7C600A531E8B /* Pods_TinDogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinDogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB27D820525E530019DD43 /* TinDog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinDog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB27DB20525E530019DD43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDCB27DD20525E530019DD43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDCB27E020525E530019DD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDCB27E220525E530019DD43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDCB27E520525E530019DD43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		DDCB27F720525E540019DD43 /* TinDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDCB27FB20525E540019DD43 /* TinDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinDogUITests.swift; sourceTree = "<group>"; };
 		DDCB27FD20525E540019DD43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDF471732053650900046A9F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +137,8 @@
 		DDCB27DA20525E530019DD43 /* TinDog */ = {
 			isa = PBXGroup;
 			children = (
+				DDF4717220535CD900046A9F /* Controller */,
 				DDCB27DB20525E530019DD43 /* AppDelegate.swift */,
-				DDCB27DD20525E530019DD43 /* ViewController.swift */,
 				DDCB27DF20525E530019DD43 /* Main.storyboard */,
 				DDCB27E220525E530019DD43 /* Assets.xcassets */,
 				DDCB27E420525E530019DD43 /* LaunchScreen.storyboard */,
@@ -163,6 +163,14 @@
 				DDCB27FD20525E540019DD43 /* Info.plist */,
 			);
 			path = TinDogUITests;
+			sourceTree = "<group>";
+		};
+		DDF4717220535CD900046A9F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDF471732053650900046A9F /* HomeViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,8 +466,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCB27DE20525E530019DD43 /* ViewController.swift in Sources */,
 				DDCB27DC20525E530019DD43 /* AppDelegate.swift in Sources */,
+				DDF471742053650900046A9F /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
