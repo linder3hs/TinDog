@@ -20,13 +20,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dqZ-yr-cpr">
-                                <rect key="frame" x="12" y="72" width="350" height="577"/>
+                                <rect key="frame" x="12" y="72" width="350" height="587"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ODw-N4-9am" userLabel="Card">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="507"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="517"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe Card" translatesAutoresizingMaskIntoConstraints="NO" id="PgA-4s-AHG">
-                                                <rect key="frame" x="0.0" y="0.0" width="350" height="507"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="350" height="517"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crispeta" translatesAutoresizingMaskIntoConstraints="NO" id="Wmq-7D-N5v">
                                                 <rect key="frame" x="12" y="8" width="326" height="372"/>
@@ -49,7 +49,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="Wmq-7D-N5v" firstAttribute="top" secondItem="ODw-N4-9am" secondAttribute="top" constant="8" id="3Cm-OE-fF0"/>
                                             <constraint firstItem="PgA-4s-AHG" firstAttribute="leading" secondItem="ODw-N4-9am" secondAttribute="leading" id="4PW-gA-gD3"/>
                                             <constraint firstItem="PgA-4s-AHG" firstAttribute="top" secondItem="ODw-N4-9am" secondAttribute="top" id="5Y0-em-TER"/>
                                             <constraint firstItem="cPz-zb-43F" firstAttribute="top" secondItem="Wmq-7D-N5v" secondAttribute="bottom" constant="8" id="5no-XI-TIm"/>
@@ -61,9 +60,7 @@
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="cPz-zb-43F" secondAttribute="trailing" id="W0o-3c-0iW"/>
                                             <constraint firstAttribute="trailing" secondItem="cPz-zb-43F" secondAttribute="trailing" constant="14" id="WJu-JP-Ko7"/>
                                             <constraint firstItem="cPz-zb-43F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ODw-N4-9am" secondAttribute="leading" constant="12" id="beJ-BQ-fOC"/>
-                                            <constraint firstItem="Wmq-7D-N5v" firstAttribute="leading" secondItem="ODw-N4-9am" secondAttribute="leading" constant="12" id="bhR-Gj-upr"/>
                                             <constraint firstItem="cPz-zb-43F" firstAttribute="leading" secondItem="ODw-N4-9am" secondAttribute="leading" constant="14" id="f6Y-sA-1CZ"/>
-                                            <constraint firstItem="Wmq-7D-N5v" firstAttribute="leading" secondItem="ODw-N4-9am" secondAttribute="leading" constant="12" id="hmw-pk-jgv"/>
                                             <constraint firstItem="Wmq-7D-N5v" firstAttribute="top" secondItem="ODw-N4-9am" secondAttribute="top" constant="8" id="nm1-1j-If5"/>
                                             <constraint firstAttribute="trailing" secondItem="Wmq-7D-N5v" secondAttribute="trailing" constant="12" id="ops-Nt-OGv"/>
                                             <constraint firstItem="Wmq-7D-N5v" firstAttribute="leading" secondItem="ODw-N4-9am" secondAttribute="leading" constant="12" id="r6e-NS-3ah"/>
@@ -74,7 +71,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QdG-YW-fKh" userLabel="Buttons">
-                                        <rect key="frame" x="0.0" y="507" width="350" height="70"/>
+                                        <rect key="frame" x="0.0" y="517" width="350" height="70"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d14-Qb-Qrb">
                                                 <rect key="frame" x="0.0" y="0.0" width="350" height="70"/>
@@ -133,6 +130,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9FF-jd-GAM"/>
+                    <connections>
+                        <outlet property="cardView" destination="ODw-N4-9am" id="CiJ-Rb-jXx"/>
+                        <outlet property="homewrapper" destination="dqZ-yr-cpr" id="Nej-T0-KXo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
